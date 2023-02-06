@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./global.css" />
+
+        <title>Synergy 2023 | SYMPHONIC REVVING</title>
+
+        <link rel="apple-touch-icon" sizes="60x60" href="synergy_icons/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="synergy_icons/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="synergy_icons/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="synergy_icons/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="synergy_icons/apple-icon-114x114.png" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="synergy_icons/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="synergy_icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="synergy_icons/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="synergy_icons/favicon-16x16.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="synergy_icons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#f3eac1" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @font-face {
+                font-family: 'Agency';
+                src: url('assets/agency-fb.ttf') format('truetype'); /* Safari, Android, iOS */
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                background-image: url("assets/WEBSITE BG3.png");
+                background-size: cover;
+                background-position: center;
+            }
+           
+            .top-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                /* flex-grow: 1; */
+                align-items: center;
+            }
+            h1,
+            h2 {
+                font-family: 'Agency';
+            }
+            h1 {
+                font-size: 4rem;
+                font-weight: 600;
+                margin: 0;
+                text-align: center;
+                font-family: 'Oswald', sans-serif;
+            }
+            h2 {
+                font-size: 3.4rem;
+                margin: 0;
+                color: var(--blue);
+
+                text-transform: uppercase;
+                --base: 0.02;
+                text-shadow: calc(var(--base) * 1rem) calc(var(--base) * 2 * 1rem)
+                        var(--pale-yellow),
+                    calc(var(--base) * 3 * 1rem) calc(var(--base) * 4 * 1rem) var(--gray);
+            }
+            h3{
+                font-size: 1.5rem;
+                color: rgb(255, 255, 255);
+            }
+            h4{
+                font-size:1 rem;
+                margin: 0;
+                color: rgb(255, 255, 255);
+            }
+            .links {
+                padding-bottom: 16px;
+                text-align: center;
+                
+            }
+            .links a {
+                margin-left: 22px;
+                font-size: 1.2rem;
+                font-family: var(--font__secondary);
+                text-transform: uppercase;
+                font-weight: 700;
+                color: var(--pale-yellow__white);
+                display: inline-block;
+            }
+
+            .reg-btn {
+                margin: 11px;
+                border-radius: 4px;
+            }
+            #logo {
+                width: 30vh;
+                height: 30vh;
+                background-image: url("assets/syn-square-all (4).png");
+                background-size: cover;
+            }
+
+            #logo__gear {
+                width: 100%;
+                height: 100%;
+                -webkit-animation: rotating 11s linear infinite;
+                -moz-animation: rotating 11s linear infinite;
+                -ms-animation: rotating 11s linear infinite;
+                -o-animation: rotating 11s linear infinite;
+                animation: rotating 11s linear infinite;
+                transform-origin: 50% 59%;
+            }
+
+            @-webkit-keyframes rotating /* Safari and Chrome */ {
+                from {
+                    -webkit-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                to {
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes rotating {
+                from {
+                    -ms-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                to {
+                    -ms-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            @media (min-width: 543px) {
+                /*
+
+                .links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+                }
+                .links a {
+                    margin-bottom: 22px;
+                } */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-div">
+            <h1>Synergy 2023</h1>
+            <div id="logo">
+                <img id="logo__gear" src="assets/syn-square-all (5).png" />
+            </div>
+
+            <h2>Symphonic Revving</h2>
+        </div>
+        <h4>Registrations Starting Soon...</h4>
+        <h3> Stay tuned @ <a href="http://synergynitt.com">our website</a></h>
+      <!--
+        <div class="links">
+            <a href="events/index.html">Events</a>
+            <a href="events/workshops/index.html">Workshops</a>
+            <a href="events/guest-lectures/index.html">Guest&nbsp;lectures</a>
+            <br />
+            <a href="register/index.html" class="button reg-btn">Register</a>
+            <a href="login/index.html" class="button reg-btn">Login</a>
+        </div>
+        -->
+        
+    </body>
+</html>
